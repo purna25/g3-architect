@@ -122,9 +122,21 @@ main{
         color: #FFF;
         width: 342px;
         padding: 40px;
+        text-align: center;
+        position: relative;
+        bottom: 100px;
 }
 .ten-years-badge h2{
         font-size: 4rem;
+        margin: 0;
+}
+.feature-img img{
+        height: 90%;
+        margin-left: 90px;
+}
+.ten-years-badge p{
+        font-size: 1.5rem;
+       
 }
 
 /* facts section */
@@ -169,6 +181,18 @@ main{
         width: 165px;
 }
 
+/* footer */
+footer{
+        background-color: #FFF4E7;
+}
+.footer-font{
+        font-size: 20px;
+        font-weight: 500;
+        color: #424242;
+        text-align: center;
+        padding: 30px 150px;
+}
+
 
 /* responsive media query */
 /* mobile devices */
@@ -180,21 +204,32 @@ main{
                                     .teams-container,
                                     .facts-card-container,
                                     .sponsors-img-container,
+                                    .features,
                                     nav{
                                     flex-direction: column;
                                     }
                                     .teams-img-container{
                                     grid-template-columns: 1fr;
                                     }
+                                    
                                     .facts-card-container{
                                         gap: 20px;
                                     }
+                                    .feature-img img{
+                                        width: 100%;
+                                    }
+                                    .ten-years-badge{
+                                        position: static;
+                                        max-width: 300px;
+                                        
+                                    }
+
                                                                 
 }
                             
 /* tablet or medium devices */
 @media screen and (min-width:576px) and (max-width:960px) {
-                                    nav, .teams-container, .sponsors-img-container{
+                                    nav, .teams-container, .sponsors-img-container, .features{
                                     flex-direction: column;
                                     }
                                     header{
